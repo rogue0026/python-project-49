@@ -28,15 +28,14 @@ def run_game():
 
 
 def generate_sequence() -> list:
-    step = randbelow(1, 10)
-    begin_number = randbelow(1, 50)
+    step = randbelow(9) + 1
+    begin_number = randbelow(50) + 1
     sequence = [str(begin_number)]
-    
+
     for i in range(9):
         sequence.append(str(begin_number + step))
         begin_number += step
-    randbelow(0, len(sequence))
-    replace_index = randbelow(0, len(sequence))
+    replace_index = randbelow(len(sequence))
     sequence[replace_index] = '..'
     return sequence
 

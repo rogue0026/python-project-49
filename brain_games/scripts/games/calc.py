@@ -1,4 +1,4 @@
-from secrects import randbelow
+from secrets import randbelow
 
 from . import engine
 
@@ -27,9 +27,9 @@ def run_game():
 
 def create_statement() -> tuple:
     arithmethic_operations = ['+', '-', '*']
-    op_left = randbelow(1, 50)
-    op_right = randbelow(1, 50)
-    operation = randbelow(0, len(arithmethic_operations))
+    op_left = randbelow(50)
+    op_right = randbelow(50)
+    operation = arithmethic_operations[randbelow(len(arithmethic_operations))]
     return (op_left, operation, op_right)
     
 

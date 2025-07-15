@@ -11,7 +11,7 @@ def run_game():
     all_answers_are_correct = True
     attempts = 0
     while attempts < engine.MAX_ATTEMPTS:
-        number = randbelow(1, 100)
+        number = randbelow(100)
         engine.create_question(number)
         user_answer = engine.receive_user_answer()
         correct_answer = is_prime(number)
