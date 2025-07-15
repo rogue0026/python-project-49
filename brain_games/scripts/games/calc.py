@@ -1,5 +1,4 @@
-from random import randint
-from random import choice
+from random import choice, randint
 
 from . import engine
 

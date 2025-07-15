@@ -1,6 +1,5 @@
 import prompt
 
-
 MAX_ATTEMPTS = 3
 
 
