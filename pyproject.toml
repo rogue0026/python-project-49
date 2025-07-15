@@ -2,7 +2,7 @@
 name = "hexlet-code"
 version = "0.1.0"
 description = "Add your description here"
-authors = authors = [
+authors = [
     { name = "Paul Nozdrachev", email = "p.nozdra4ev@yandex.ru" },
 ]
 readme = "README.md"
