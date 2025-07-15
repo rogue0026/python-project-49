@@ -22,7 +22,7 @@ def send_correct_phrase():
     return "Correct!"
 
 
-def send_wrong_answer(wrong: str, right: str) -> str:
+def send_wrong_answer(wrong: str, right: str):
     print(f"{wrong} is wrong answer ;(. Correct answer was {right}.")
 
 
