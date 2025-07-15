@@ -27,8 +27,8 @@ def send_wrong_answer(wrong: str, right: str):
 
 
 def send_try_again(name: str):
-    print(f"Let's try again, {name}")
+    print(f"Let's try again, {name}!")
 
 
 def send_congratulations(name: str):
-    print(f"Congratulations, {name}")
+    print(f"Congratulations, {name}!")
