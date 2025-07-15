@@ -4,3 +4,4 @@
 ![Local GIF](./assets/brain-calc.gif)
 ![Local GIF](./assets/brain-gcd.gif)
 ![Local GIF](./assets/brain-progression.gif)
+![Local GIF](./assets/brain-prime.gif)
