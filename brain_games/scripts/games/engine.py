@@ -23,7 +23,7 @@ def send_correct_phrase():
 
 
 def send_wrong_answer(wrong: str, right: str):
-    print(f"{wrong} is wrong answer ;(. Correct answer was {right}.")
+    print(f"'{wrong}' is wrong answer ;(. Correct answer was '{right}'.")
 
 
 def send_try_again(name: str):
