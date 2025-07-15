@@ -1,8 +1,8 @@
-from .games import even
+from .games import calc
 
 
 def main():
-    even.run_game()
+    calc.run_game()
 
 
 if __name__ == '__main__':
