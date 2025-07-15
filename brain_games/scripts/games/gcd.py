@@ -1,5 +1,5 @@
 import math
-from random import randint
+from secrets import randbelow
 
 from . import engine
 
@@ -11,8 +11,8 @@ def run_game():
     attempts = 0
     all_answers_are_correct = True
     while attempts < engine.MAX_ATTEMPTS:
-        num1 = randint(1, 50)
-        num2 = randint(1, 50)
+        num1 = randbelow(1, 50)
+        num2 = randbelow(1, 50)
         correct_answer = str(math.gcd(num1, num2))
         engine.create_question(f'{num1} {num2}')
         user_answer = engine.receive_user_answer()

@@ -1,4 +1,6 @@
-from random import choice, randint
+from random import choice
+
+from secrects import randbelow
 
 from . import engine
 
@@ -27,8 +29,8 @@ def run_game():
 
 def create_statement() -> tuple:
     arithmethic_operations = ['+', '-', '*']
-    op_left = randint(1, 50)
-    op_right = randint(1, 50)
+    op_left = randbelow(1, 50)
+    op_right = randbelow(1, 50)
     operation = choice(arithmethic_operations)
     return (op_left, operation, op_right)
     

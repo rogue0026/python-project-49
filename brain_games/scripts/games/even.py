@@ -1,4 +1,4 @@
-import random
+from secrects import randbelow
 
 from . import engine
 
@@ -9,7 +9,7 @@ def run_game():
     all_answers_are_correct = True
     attempts = 0
     while attempts < engine.MAX_ATTEMPTS:
-        number = random.randint(0, 1000)
+        number = randbelow(0, 1000)
         correct_answer = 'yes' if number % 2 == 0 else 'no'
         engine.create_question(number)
         user_answer = engine.receive_user_answer()

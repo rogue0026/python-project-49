@@ -1,4 +1,5 @@
 from random import randint
+from secrets import randbelow
 
 from . import engine
 
@@ -28,8 +29,8 @@ def run_game():
 
 
 def generate_sequence() -> list:
-    step = randint(1, 10)
-    begin_number = randint(1, 50)
+    step = randbelow(1, 10)
+    begin_number = randbelow(1, 50)
     sequence = [str(begin_number)]
     
     for i in range(9):
