@@ -1,4 +1,3 @@
-from random import randint
 from secrets import randbelow
 
 from . import engine
@@ -36,8 +35,8 @@ def generate_sequence() -> list:
     for i in range(9):
         sequence.append(str(begin_number + step))
         begin_number += step
-
-    replace_index = randint(0, len(sequence) - 1)
+    randbelow(0, len(sequence))
+    replace_index = randbelow(0, len(sequence))
     sequence[replace_index] = '..'
     return sequence
 

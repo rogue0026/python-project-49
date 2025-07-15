@@ -1,5 +1,3 @@
-from random import choice
-
 from secrects import randbelow
 
 from . import engine
@@ -31,7 +29,7 @@ def create_statement() -> tuple:
     arithmethic_operations = ['+', '-', '*']
     op_left = randbelow(1, 50)
     op_right = randbelow(1, 50)
-    operation = choice(arithmethic_operations)
+    operation = randbelow(0, len(arithmethic_operations))
     return (op_left, operation, op_right)
     
 
