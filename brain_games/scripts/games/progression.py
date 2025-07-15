@@ -32,7 +32,7 @@ def generate_sequence() -> list:
     begin_number = randbelow(50) + 1
     sequence = [str(begin_number)]
 
-    for i in range(9):
+    for _ in range(9):
         sequence.append(str(begin_number + step))
         begin_number += step
     replace_index = randbelow(len(sequence))
@@ -49,7 +49,6 @@ def get_unknown_element(sequence: list) -> str:
         else:
             left += 1
             right += 1
-            continue
         
     step = int(sequence[right]) - int(sequence[left])
     

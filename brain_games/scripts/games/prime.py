@@ -23,7 +23,6 @@ def run_game():
         else:
             engine.send_correct_phrase()
             attempts += 1
-            continue
     
     if all_answers_are_correct:
         engine.send_congratulations(user_name)
