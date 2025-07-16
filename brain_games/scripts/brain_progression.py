@@ -1,8 +1,11 @@
-from .games import progression
+from ..games.engine import game_engine
+from ..games.progression import game_progression
+
+GAME_OBJECTIVE = 'What number is missing in the progression?'
 
 
 def main():
-    progression.run_game()
+    game_engine(GAME_OBJECTIVE, game_progression)
 
 
 if __name__ == '__main__':

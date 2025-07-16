@@ -1,8 +1,11 @@
-from .games import gcd
+from ..games import engine
+from ..games.gcd import gcd_game
+
+GAME_OBJECTIVE = 'Find the greatest common divisor of given numbers.'
 
 
 def main():
-    gcd.run_game()
+    engine.game_engine(GAME_OBJECTIVE, gcd_game)
 
 
 if __name__ == '__main__':
