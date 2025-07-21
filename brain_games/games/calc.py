@@ -1,6 +1,9 @@
 from secrets import randbelow
 
 
+GAME_OBJECTIVE = 'What is the result of the expression?'
+
+
 def get_right_answer(left: int, op: str, right: int) -> str:
     match op:
         case '+':
@@ -11,7 +14,7 @@ def get_right_answer(left: int, op: str, right: int) -> str:
             return str(left * right)
 
 
-def calc_game() -> tuple:
+def run_game() -> tuple:
     arithmetic_operations = ['+', '-', '*']
     operation = arithmetic_operations[randbelow(len(arithmetic_operations))]
     left_operand = randbelow(50)

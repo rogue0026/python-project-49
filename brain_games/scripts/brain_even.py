@@ -1,10 +1,9 @@
-from ..games import engine, even
-
-GAME_OBJECTIVE = 'Answer "yes" if the number is even, otherwise answer "no".' 
+from ..games import even
+from brain_games import engine
 
 
 def main():
-    engine.game_engine(GAME_OBJECTIVE, even.even_game)
+    engine.game_engine(even)
 
 
 if __name__ == '__main__':

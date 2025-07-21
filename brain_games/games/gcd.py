@@ -2,7 +2,10 @@ import math
 from secrets import randbelow
 
 
-def gcd_game() -> tuple:
+GAME_OBJECTIVE = 'Find the greatest common divisor of given numbers.'
+
+
+def run_game() -> tuple:
     num1 = randbelow(50)
     num2 = randbelow(50)
     question = f'{num1} {num2}'

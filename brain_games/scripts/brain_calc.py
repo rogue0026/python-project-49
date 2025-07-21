@@ -1,10 +1,9 @@
-from ..games import calc, engine
-
-GAME_OBJECTIVE = 'What is the result of the expression?'
+from ..games import calc
+from .. import engine
 
 
 def main():
-    engine.game_engine(GAME_OBJECTIVE, calc.calc_game)
+    engine.game_engine(calc)
 
 
 if __name__ == '__main__':

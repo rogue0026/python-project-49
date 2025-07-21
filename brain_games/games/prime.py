@@ -2,6 +2,9 @@ from math import sqrt
 from secrets import randbelow
 
 
+GAME_OBJECTIVE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
 def is_prime(num: int) -> str:
     if num < 2:
         return 'no'
@@ -11,7 +14,7 @@ def is_prime(num: int) -> str:
     return 'yes'
 
 
-def game_prime():
+def run_game():
     question = randbelow(100)
     correct_answer = is_prime(question)
     return question, correct_answer
